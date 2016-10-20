@@ -1,0 +1,24 @@
+{
+  "name": "angular2-skeleton",
+  "description": "angular template",
+  "main": "",
+  "authors": [
+    "Marta Sanchez <sanchez.marta@gmail.com>"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "angular",
+    "template"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
