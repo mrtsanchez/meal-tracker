@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Meal } from './meal.model';
 
 @Component({
   selector: 'my-app',
@@ -8,10 +9,18 @@ import { Component } from '@angular/core';
     <h1>Meal Tracker</h1>
     <p>Track your meals, calories, and stuff like that.</p>
     </div>
+    <meal-list
+      [childMealList]="mealsTracker"
+      ></meal-list>
+    <new-meal></new-meal>
   </div>
   `
 })
 
 export class AppComponent {
-
+  public mealsTracker: Meal[] = [
+    new Meal("Tostada", 200, "Desayuno"),
+    new Meal("Gocheria", 600, "Comida"),
+    new Meal("Pesca", 100, "Cena"),
+  ];
 }
