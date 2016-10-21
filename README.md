@@ -25,6 +25,7 @@ HTML, Javascript, Angular JS, Typescript, CSS.
 | Behaviour  | Input | Output |
 | ------------- |:-------------:| -----|
 | The user should be able to log a food with name, calories and details.     | I ate for breakfast oatmeal and a banana, 100 calories | The app tracks the food name, calories and details. |
+| The user should be able to edit the food name, calories and details     | fries: 365 calories >>> fries: 100 calories. | update the value for calories from 365 to 100. |
 
 ### License
 
