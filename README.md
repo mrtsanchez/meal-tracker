@@ -26,6 +26,8 @@ HTML, Javascript, Angular JS, Typescript, CSS.
 | ------------- |:-------------:| -----|
 | The user should be able to log a food with name, calories and details.     | I ate for breakfast oatmeal and a banana, 100 calories | The app tracks the food name, calories and details. |
 | The user should be able to edit the food name, calories and details     | fries: 365 calories >>> fries: 100 calories. | update the value for calories from 365 to 100. |
+| The user should be able to view only high-calorie foods. | select "view only high-calorie foods" | Display only foods with more than 500 calories |
+| The user should be able to view only low-calorie foods.    | select "view only lof-calorie foods" | Display only foods with less than 500 calories |
 
 ### License
 
