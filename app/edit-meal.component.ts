@@ -5,21 +5,26 @@ import { Meal } from './meal.model';
   selector: 'edit-meal',
   template: `
 
-  <div *ngIf="ChildSelectedMeal">
-    <h1>Edit Task</h1>
-    <div>
+  <div class="panel panel-default" *ngIf="ChildSelectedMeal">
+    <div class="panel-heading">
+      <h3 class="panel-title">Edit Meal:</h3>
+    </div>
+    <div class="panel-body">
+
+    <div class="edit-task">
       <label>Enter Meal Name:</label>
-      <input [(ngModel)]="ChildSelectedMeal.name">
+      <input [(ngModel)]="ChildSelectedMeal.name" class="input-sm edit-field">
     </div>
-    <div>
+    <div class="edit-task">
       <label>Enter Meal Calories:</label>
-      <input [(ngModel)]="ChildSelectedMeal.calories">
+      <input [(ngModel)]="ChildSelectedMeal.calories" class="input-sm edit-field">
     </div>
-    <div>
+    <div class="edit-task">
       <label>Enter Meal Description:</label>
-      <input [(ngModel)]="ChildSelectedMeal.details">
-      <button (click)="doneClicked()">Done</button>
+      <input [(ngModel)]="ChildSelectedMeal.details" class="input-sm edit-field">
     </div>
+    </div>
+    <div class="panel-footer"><button (click)="doneClicked()">Done</button></div>
   </div>
 
   `

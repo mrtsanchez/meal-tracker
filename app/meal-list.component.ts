@@ -18,15 +18,29 @@ import { Meal } from './meal.model';
   </div>
 
   <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="well" *ngFor="let currentMeal of childMealList | calories:selectedCalories"><h3 (click)="clickMeal(currentMeal)">{{currentMeal.name}}</h3>
+        </div>
+      </div>
 
-    <div class="well" *ngFor="let currentMeal of childMealList | calories:selectedCalories"><h3 (click)="clickMeal(currentMeal)">{{currentMeal.name}}</h3>
-      <div *ngIf="expandMeal">
-        <p>Calories: {{currentMeal.calories}}</p>
-        <p>Description: {{currentMeal.details}}</p>
-        <button (click)="showDetails(currentMeal)">Edit</button>
+      <div class="col-md-6">
+        <div class="panel panel-default" *ngIf="expandMeal">
+          <div class="panel-heading">
+            <h3 class="panel-title">Details on {{expandMeal.name}}</h3>
+          </div>
+          <div class="panel-body">
+            <p>Calories: {{expandMeal.calories}}</p>
+            <p>Description: {{expandMeal.details}}</p>
+          </div>
+          <div class="panel-footer"><button (click)="showDetails(expandMeal)">Edit</button></div>
+        </div>
+        <edit-meal
+          [ChildSelectedMeal]="selectedMeal"
+          (doneClickedSender)="finishedEditing()"
+        ></edit-meal>
       </div>
     </div>
-
   </div>
   `
 })
@@ -37,17 +51,22 @@ export class MealListComponent {
 
   chooseMealByCalories(caloriesFromMenu) {
     this.selectedCalories = caloriesFromMenu;
-    // console.log(this.selectedCalories);
   }
 
-  explandMeal: Meal;
+  expandMeal: Meal = null;
   clickMeal(clickedMeal: Meal) {
     this.expandMeal = clickedMeal;
   }
 
-  @Input() childMealList: Meal[];
-  @Output() buttonClicked = new EventEmitter();
-  showDetails(mealSelected: Meal) {
-    this.buttonClicked.emit(mealSelected);
+  selectedMeal: Meal = null;
+  showDetails(currentMeal: Meal) {
+    this.selectedMeal = currentMeal;
   }
+
+  finishedEditing() {
+  this.selectedMeal = null;
+  }
+
+  @Input() childMealList: Meal[];
+
 }

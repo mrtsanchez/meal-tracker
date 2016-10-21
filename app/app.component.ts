@@ -29,10 +29,9 @@ import { Meal } from './meal.model';
 
   <div class="container">
 
-    <edit-meal
-      [ChildSelectedMeal]="selectedMeal"
-      (doneClickedSender)="finishedEditing()"
-      ></edit-meal>
+
+
+
   </div>
   `
 })
@@ -46,12 +45,12 @@ export class AppComponent {
   addMeal(newMealFromChild: Meal) {
     this.mealsTracker.push(newMealFromChild);
   }
-  selectedMeal: Meal = null;
-  displayMeal(clickedMeal: Meal) {
-  this.selectedMeal = clickedMeal;
-  // console.log("this.selectedMeal");
-  }
-  finishedEditing() {
-  this.selectedMeal = null;
-  }
+  // selectedMeal: Meal = null;
+  // displayMeal(clickedMeal: Meal) {
+  // this.selectedMeal = clickedMeal;
+  // // console.log("this.selectedMeal");
+  // }
+  // finishedEditing() {
+  // this.selectedMeal = null;
+  // }
 }

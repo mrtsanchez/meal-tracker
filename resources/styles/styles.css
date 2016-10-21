@@ -46,3 +46,11 @@
   font-size: 1.5em;
   margin-right: 10px;
 }
+
+.edit-task {
+  margin-bottom: 10px;
+}
+
+.edit-field {
+float: right;
+}
