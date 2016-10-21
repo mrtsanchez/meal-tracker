@@ -4,18 +4,31 @@ import { Meal } from './meal.model';
 @Component({
   selector: 'my-app',
   template: `
-  <div class="container">
-    <div class="jumbotron">
-    <h1>Meal Tracker</h1>
-    <p>Track your meals, calories, and stuff like that.</p>
+  <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Lato" rel="stylesheet">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">MEAL TRACKER APP</a>
+      </div>
     </div>
-    <meal-list
-      [childMealList]="mealsTracker"
-      (buttonClicked)="displayMeal($event)"
-      ></meal-list>
+  </nav>
+
+  <div class="jumbotron">
+    <div class="container">
     <new-meal
       (newMealSender)="addMeal($event)"
       ></new-meal>
+    </div>
+  </div>
+
+  <meal-list
+    [childMealList]="mealsTracker"
+    (buttonClicked)="displayMeal($event)"
+    ></meal-list>
+
+  <div class="container">
+
     <edit-meal
       [ChildSelectedMeal]="selectedMeal"
       (doneClickedSender)="finishedEditing()"

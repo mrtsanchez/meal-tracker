@@ -5,19 +5,21 @@ import { Meal } from './meal.model';
   selector: 'new-meal',
   template: `
     <h1>Track a new Meal</h1>
-    <div>
-      <label>What did you eat?</label>
-      <input #newFood>
-    </div>
-    <div>
-      <label>Calories count:</label>
-      <input #newCal>
-    </div>
-    <div>
-      <label>Enter details:</label>
-      <input #newDetails>
-      <button (click)="addMeal(newFood.value, newCal.value, newDetails.value)">Add</button>
-    </div>
+    <form class="form-inline">
+      <div class="form-group">
+        <input #newFood placeholder="What did you eat?" class="input-lg form-control">
+      </div>
+      <div class="form-group">
+        <label for="calories"><img src="/resources/images/next.png" alt="  "/></label>
+        <input #newCal placeholder="Calories Count" class="form-control input-lg" id="calories">
+      </div>
+      <div class="form-group">
+        <label for="calories"><img src="/resources/images/next.png" alt="  "/></label>
+        <input #newDetails placeholder="Extra Details" class="input-lg form-control">
+      </div>
+      <button class="btn btn-danger btn-lg" (click)="addMeal(newFood.value, newCal.value, newDetails.value)" id="plus-button">+</button>
+    </form>
+
   `
 })
 

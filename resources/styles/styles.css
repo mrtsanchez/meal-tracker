@@ -1,3 +1,48 @@
-body{
-  margin-top: 20px;
+/*header*/
+
+.navbar-default {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.navbar-default .navbar-brand {
+  color: white;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 2em;
+}
+
+/*Add a new meal */
+
+.jumbotron {
+  background: url("/resources/images/jumbotron_bg.jpeg") ;
+  background-size: cover;
+  min-height: 500px;
+  margin-bottom: 0;
+}
+
+.jumbotron h1 {
+  margin-top: 150px;
+  margin-bottom: 20px;
+  color: #BC8034;
+  text-shadow: -1px 0 #937B63, 0 1px #937B63, 1px 0 #937B63, 0 -1px #937B63;
+}
+
+#plus-button{
+  margin-left: 10px;
+}
+
+/*calories selector*/
+
+#selector {
+  background-color: #124559;
+  min-height: 60px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.filterby-title {
+  color: #D9CAB3;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 1.5em;
+  margin-right: 10px;
 }
