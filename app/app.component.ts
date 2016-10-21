@@ -11,10 +11,15 @@ import { Meal } from './meal.model';
     </div>
     <meal-list
       [childMealList]="mealsTracker"
+      (buttonClicked)="displayMeal($event)"
       ></meal-list>
     <new-meal
       (newMealSender)="addMeal($event)"
       ></new-meal>
+    <edit-meal
+      [ChildSelectedMeal]="selectedMeal"
+      (doneClickedSender)="finishedEditing()"
+      ></edit-meal>
   </div>
   `
 })
@@ -27,5 +32,13 @@ export class AppComponent {
   ];
   addMeal(newMealFromChild: Meal) {
     this.mealsTracker.push(newMealFromChild);
+  }
+  selectedMeal: Meal = null;
+  displayMeal(clickedMeal: Meal) {
+  this.selectedMeal = clickedMeal;
+  // console.log("this.selectedMeal");
+  }
+  finishedEditing() {
+  this.selectedMeal = null;
   }
 }
