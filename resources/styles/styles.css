@@ -6,7 +6,7 @@
 }
 
 .navbar-default .navbar-brand {
-  color: white;
+  color: #F7F9F9;
   font-family: 'Fjalla One', sans-serif;
   font-size: 2em;
 }
@@ -21,7 +21,7 @@
 }
 
 .jumbotron h1 {
-  margin-top: 150px;
+  margin-top: 200px;
   margin-bottom: 20px;
   color: #BC8034;
   text-shadow: -1px 0 #937B63, 0 1px #937B63, 1px 0 #937B63, 0 -1px #937B63;
@@ -47,10 +47,55 @@
   margin-right: 10px;
 }
 
-.edit-task {
+/*edit meals*/
+
+.edit-meal {
   margin-bottom: 10px;
 }
 
 .edit-field {
 float: right;
+}
+
+/*Display tracked meals*/
+
+.well {
+    background-color: #F7F9F9;
+}
+
+.well h3 {
+  color: #124559;
+}
+
+.panel > .panel-heading {
+  color: #F7F9F9;
+  background-color: #124559;
+}
+
+.panel > .panel-body {
+  color: #124559;
+  background-color: #F7F9F9;
+}
+
+.panel > .panel-footer {
+  color: #124559;
+  background-color: #F7F9F9;
+  border-color: #F7F9F9;
+}
+
+.panel-default {
+  border-color: #D9CAB3;
+}
+
+.panel p {
+  font-size: 1.2em;
+}
+
+.panel h3 {
+  font-size: 1.5em;
+}
+
+body {
+  background-color: #D9CAB3;
+  font-family: 'Lato', sans-serif;
 }

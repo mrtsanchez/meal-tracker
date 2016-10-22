@@ -4,7 +4,6 @@ import { Meal } from './meal.model';
 @Component({
   selector: 'my-app',
   template: `
-  <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Lato" rel="stylesheet">
   <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
@@ -29,18 +28,17 @@ import { Meal } from './meal.model';
 
   <div class="container">
 
-
-
-
   </div>
   `
 })
 
 export class AppComponent {
   public mealsTracker: Meal[] = [
-    new Meal("Tostada", 200, "Desayuno"),
-    new Meal("Gocheria", 600, "Comida"),
-    new Meal("Pesca", 100, "Cena"),
+    new Meal("Steak with Fries", 665, "Lunch"),
+    new Meal("Grilled Cheese", 300, "Dinner"),
+    new Meal("Yogurt and Granola", 100, "Breakfast"),
+    new Meal("Banana", 50, "Snack"),
+    new Meal("Ice Cream", 700, "Snack"),
   ];
   addMeal(newMealFromChild: Meal) {
     this.mealsTracker.push(newMealFromChild);

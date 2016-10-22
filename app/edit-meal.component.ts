@@ -11,20 +11,20 @@ import { Meal } from './meal.model';
     </div>
     <div class="panel-body">
 
-    <div class="edit-task">
+    <div class="edit-meal">
       <label>Enter Meal Name:</label>
       <input [(ngModel)]="ChildSelectedMeal.name" class="input-sm edit-field">
     </div>
-    <div class="edit-task">
+    <div class="edit-meal">
       <label>Enter Meal Calories:</label>
       <input [(ngModel)]="ChildSelectedMeal.calories" class="input-sm edit-field">
     </div>
-    <div class="edit-task">
+    <div class="edit-meal">
       <label>Enter Meal Description:</label>
       <input [(ngModel)]="ChildSelectedMeal.details" class="input-sm edit-field">
     </div>
     </div>
-    <div class="panel-footer"><button (click)="doneClicked()">Done</button></div>
+    <div class="panel-footer text-right"><button (click)="doneClicked()" class="btn btn-danger">Done</button></div>
   </div>
 
   `

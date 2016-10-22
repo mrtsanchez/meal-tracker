@@ -6,11 +6,13 @@ import { NewMealComponent } from './new-meal.component'
 import { FormsModule }   from '@angular/forms';
 import { EditMealComponent } from './edit-meal.component'
 import { CaloriesPipe } from './calories.pipe'
+import {MomentModule} from 'angular2-moment';
 
 @NgModule({
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    MomentModule
   ],
   declarations: [
     AppComponent,
@@ -23,3 +25,5 @@ import { CaloriesPipe } from './calories.pipe'
 })
 
 export class AppModule { }
+
+// platformBrowserDynamic().bootstrapModule(AppModule);
