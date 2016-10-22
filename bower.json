@@ -1,6 +1,6 @@
 {
-  "name": "angular2-skeleton",
-  "description": "angular template",
+  "name": "meal tracker app",
+  "description": "app to track meals amd calories.",
   "main": "",
   "authors": [
     "Marta Sanchez <sanchez.marta@gmail.com>"
@@ -10,7 +10,7 @@
     "angular",
     "template"
   ],
-  "homepage": "",
+  "homepage": "https://github.com/mrtsanchez/meal-tracker",
   "ignore": [
     "**/.*",
     "node_modules",
