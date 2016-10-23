@@ -21,7 +21,7 @@ import { Meal } from './meal.model';
     <div class="row">
       <div class="col-md-6">
         <div class="well" *ngFor="let currentMeal of childMealList | calories:selectedCalories"><h3 (click)="clickMeal(currentMeal)">{{currentMeal.name}}</h3>
-        </div>    
+        </div>
       </div>
 
       <div class="col-md-6">
@@ -32,6 +32,7 @@ import { Meal } from './meal.model';
           <div class="panel-body">
             <p>Calories: {{expandMeal.calories}}</p>
             <p>Description: {{expandMeal.details}}</p>
+            <p>Date: {{expandMeal.date}}</p>
           </div>
           <div class="panel-footer text-right"><button (click)="showDetails(expandMeal)" class="btn btn-danger">Edit</button></div>
         </div>

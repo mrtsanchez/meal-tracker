@@ -6,13 +6,13 @@ import { NewMealComponent } from './new-meal.component'
 import { FormsModule }   from '@angular/forms';
 import { EditMealComponent } from './edit-meal.component'
 import { CaloriesPipe } from './calories.pipe'
-import {MomentModule} from 'angular2-moment';
+// import { MomentModule } from 'angular2-moment';
 
 @NgModule({
   imports: [
     BrowserModule,
-    FormsModule,
-    MomentModule
+    FormsModule
+    // MomentModule
   ],
   declarations: [
     AppComponent,

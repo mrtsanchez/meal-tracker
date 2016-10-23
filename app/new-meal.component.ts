@@ -10,14 +10,18 @@ import { Meal } from './meal.model';
         <input #newFood placeholder="What did you eat?" class="input-lg form-control">
       </div>
       <div class="form-group">
-        <label for="calories"><img src="/resources/images/next.png" alt="  "/></label>
+        <label><img src="/resources/images/next.png" alt="  "/></label>
         <input #newCal placeholder="Calories Count" class="form-control input-lg" id="calories">
       </div>
       <div class="form-group">
-        <label for="calories"><img src="/resources/images/next.png" alt="  "/></label>
+        <label><img src="/resources/images/next.png" alt="  "/></label>
         <input #newDetails placeholder="Extra Details" class="input-lg form-control">
       </div>
-      <button class="btn btn-danger btn-lg" (click)="addMeal(newFood.value, newCal.value, newDetails.value)" id="plus-button">+</button>
+      <div class="form-group">
+        <label><img src="/resources/images/next.png" alt="  "/></label>
+        <input #newDate type="date" class="input-lg form-control">
+      </div>
+      <button class="btn btn-danger btn-lg" (click)="addMeal(newFood.value, newCal.value, newDetails.value, newDate.value)" id="plus-button">+</button>
     </form>
 
   `
@@ -25,9 +29,10 @@ import { Meal } from './meal.model';
 
 export class NewMealComponent {
   @Output() newMealSender = new EventEmitter();
-  addMeal(name: string, calories: number, details: string) {
-    var newMealToAdd: Meal = new Meal (name, calories, details);
+  addMeal(name: string, calories: number, details: string, date: string) {
+    var newMealToAdd: Meal = new Meal (name, calories, details, date);
     this.newMealSender.emit(newMealToAdd);
+    console.log(date);
   }
 
 }
