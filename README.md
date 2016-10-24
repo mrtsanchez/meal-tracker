@@ -8,7 +8,7 @@
 
 This is my Angular JS Independent Project for Epicodus. It's a meal tracking application. Users can log foods they've eaten each day, including details about the meal and its number of calories.
 
-![app-screenshot](https://github.com/mrtsanchez/meal-tracker/blob/master/resources/img/mealtracker_app.png)
+![app-screenshot](https://github.com/mrtsanchez/meal-tracker/blob/master/resources/images/mealtracker_app.png)
 
 ## Setup/Installation Requirements
 
