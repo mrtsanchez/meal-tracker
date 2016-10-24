@@ -4,10 +4,25 @@
 
 #### By **Marta Sánchez**
 
+[Github repository](https://github.com/mrtsanchez/meal-tracker)
+
+This is my Angular JS Independent Project for Epicodus. It's a meal tracking application. Users can log foods they've eaten each day, including details about the meal and its number of calories.
+
+![app-screenshot](https://github.com/mrtsanchez/meal-tracker/blob/master/resources/img/mealtracker_app.png)
+
+## Setup/Installation Requirements
+
+To run app locally: In terminal, navigate to your desktop and execute:
+
+To run app locally: In terminal, navigate to your desktop and execute:
+  * `$ git clone https://github.com/mrtsanchez/Github-User-Lookup`
+  * `$ npm install`
+  * `$ bower install`
 
 ## Known Bugs
 
 There are no known bugs.
+
 
 ## Technologies Used
 
