@@ -32,7 +32,7 @@ export class NewMealComponent {
   addMeal(name: string, calories: number, details: string, date: string) {
     var newMealToAdd: Meal = new Meal (name, calories, details, date);
     this.newMealSender.emit(newMealToAdd);
-    console.log(date);
+    // console.log(date);
   }
 
 }
