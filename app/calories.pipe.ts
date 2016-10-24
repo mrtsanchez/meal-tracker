@@ -10,16 +10,16 @@ import {Meal} from './meal.model';
 export class CaloriesPipe implements PipeTransform {
   transform(allMeals: Meal[], chosenCalories) {
     var filterMeals: Meal[] = [];
-    if (chosenCalories === "high"){
-      for (var i=0; i<allMeals.length; i++){
-        if (allMeals[i].calories > 500){
+    if (chosenCalories === "high") {
+      for (var i=0; i<allMeals.length; i++) {
+        if (allMeals[i].calories > 500) {
           filterMeals.push(allMeals[i]);
         }
       }
       return filterMeals;
-    } else if (chosenCalories === "low"){
-      for (var i=0; i<allMeals.length; i++){
-        if (allMeals[i].calories < 500){
+    } else if (chosenCalories === "low") {
+      for (var i=0; i<allMeals.length; i++) {
+        if (allMeals[i].calories < 500) {
           filterMeals.push(allMeals[i]);
         }
       }

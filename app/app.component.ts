@@ -34,21 +34,13 @@ import { Meal } from './meal.model';
 
 export class AppComponent {
   public mealsTracker: Meal[] = [
-    new Meal("Steak with Fries", 665, "Lunch", "2016-10-19"),
+    new Meal("Steak with Fries", 665, "Lunch", "2016-10-16"),
     new Meal("Grilled Cheese", 300, "Dinner", "2016-10-19"),
-    new Meal("Yogurt and Granola", 100, "Breakfast", "2016-10-19"),
-    new Meal("Banana", 50, "Snack", "2016-10-19"),
+    new Meal("Yogurt and Granola", 100, "Breakfast", "2016-10-18"),
+    new Meal("Banana", 50, "Snack", "2016-10-18"),
     new Meal("Ice Cream", 700, "Snack", "2016-10-19"),
   ];
   addMeal(newMealFromChild: Meal) {
     this.mealsTracker.push(newMealFromChild);
   }
-  // selectedMeal: Meal = null;
-  // displayMeal(clickedMeal: Meal) {
-  // this.selectedMeal = clickedMeal;
-  // // console.log("this.selectedMeal");
-  // }
-  // finishedEditing() {
-  // this.selectedMeal = null;
-  // }
 }

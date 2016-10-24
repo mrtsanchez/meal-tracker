@@ -60,11 +60,18 @@ float: right;
 /*Display tracked meals*/
 
 .well {
-    background-color: #F7F9F9;
+  background-color: #F7F9F9;
 }
 
 .well h3 {
   color: #124559;
+}
+
+#countCalories {
+  background-color: #BC8034;
+  color: white;
+  border-color: #BC8034;
+  font-size: 1.2em;
 }
 
 .panel > .panel-heading {

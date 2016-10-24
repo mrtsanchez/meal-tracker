@@ -6,6 +6,7 @@ import { NewMealComponent } from './new-meal.component'
 import { FormsModule }   from '@angular/forms';
 import { EditMealComponent } from './edit-meal.component'
 import { CaloriesPipe } from './calories.pipe'
+import { DatePipe } from './date.pipe'
 // import { MomentModule } from 'angular2-moment';
 
 @NgModule({
@@ -20,7 +21,8 @@ import { CaloriesPipe } from './calories.pipe'
     NewMealComponent,
     EditMealComponent,
     CaloriesPipe,
-  ],
+    DatePipe,
+    ],
   bootstrap:    [ AppComponent ]
 })
 
