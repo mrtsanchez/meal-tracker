@@ -13,8 +13,6 @@ This is my Angular JS Independent Project for Epicodus. It's a meal tracking app
 ## Setup/Installation Requirements
 
 To run app locally: In terminal, navigate to your desktop and execute:
-
-To run app locally: In terminal, navigate to your desktop and execute:
   * `$ git clone https://github.com/mrtsanchez/Github-User-Lookup`
   * `$ npm install`
   * `$ bower install`
