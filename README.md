@@ -18,6 +18,8 @@ To run app locally: In terminal, navigate to your desktop and execute:
   * `$ git clone https://github.com/mrtsanchez/Github-User-Lookup`
   * `$ npm install`
   * `$ bower install`
+  * `$ gulp build`
+  * `$ gulp serve`
 
 ## Known Bugs
 
